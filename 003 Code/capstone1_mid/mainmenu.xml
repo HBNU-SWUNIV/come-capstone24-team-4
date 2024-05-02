@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="0dp"
+    android:background="@drawable/bg_final4"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MainMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginVertical="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="650dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/menubar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="100dp"
+                        android:background="#000000"
+                        android:text="기본앱"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="100dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/menu1"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/lightonfinal1"
+                                android:textColorLink="#00FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/tv1111"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="조명"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/menu5"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/tv2"
+                                android:text="Button" />
+
+                            <TextView
+                                android:id="@+id/tv21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="TV"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/menu2"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/temphum"
+                                android:text="Button" />
+
+                            <TextView
+                                android:id="@+id/tv31"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="온 습도"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/menu6"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/scheduleicon"
+                                android:text="Button" />
+
+                            <TextView
+                                android:id="@+id/tv41"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="스케쥴화..."
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.widget.Button
+                                android:id="@+id/menu3"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/door2"
+                                android:textColorLink="#00FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/tv51"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="문열기"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/menu7"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/setting_icon2" />
+
+                            <TextView
+                                android:id="@+id/tvm1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="설정"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/menu4"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/camera"
+                                android:text="Button" />
+
+                            <TextView
+                                android:id="@+id/tv111"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="외부카메라"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/exit_btn"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/exit"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/text111"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="나가기"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/menubar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="100dp"
+                        android:background="#000000"
+                        android:text="서비스"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="100dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/menu8"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/translate"
+                                android:text="Button" />
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="번역"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/m6"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/askask3"
+                                android:text="Button"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/tv2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="감정이해"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/m2"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/calendericon"
+                                android:text="Button"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/tv3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="캘린더"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:visibility="invisible" />
+
+                            <Button
+                                android:id="@+id/m11"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/askask2"
+                                android:text="Button"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/tv4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="조명"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/m4"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/calendericon"
+                                android:text="Button"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/tv5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="캘린더"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:visibility="invisible" />
+
+                            <Button
+                                android:id="@+id/mv"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/voice2"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/tvm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Ask Me"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/m7"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF"
+                                android:foreground="@drawable/camera"
+                                android:text="Button"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/tv11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="카메라"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp"
+                                android:visibility="invisible" />
+
+                            <Button
+                                android:id="@+id/m9"
+                                android:layout_width="170dp"
+                                android:layout_height="130dp"
+                                android:layout_marginHorizontal="30dp"
+                                android:layout_weight="1"
+                                android:background="#00FFFFFF" />
+
+                            <TextView
+                                android:id="@+id/tv6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="24sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ask_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="550dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:foreground="@drawable/voice3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cam_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C32C2C2C"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/cam_view"
+            android:layout_width="900dp"
+            android:layout_height="612dp"
+            app:srcCompat="@drawable/blackscreen" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#C4000C37"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp"
+                        android:foreground="@drawable/warningicon" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="30dp"
+                        android:layout_weight="1"
+                        android:text="기기와 연결이 끊어졌습니다."
+                        android:textColor="#FFFFFF"
+                        android:textSize="48sp" />
+
+                    <Button
+                        android:id="@+id/connectbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="연결" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/c3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#92000000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/temp" />
+
+                    <TextView
+                        android:id="@+id/temp_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="None"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="60sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageview55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/hu" />
+
+                    <TextView
+                        android:id="@+id/water_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="None"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="60sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AD000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/c1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="번역기"
+                android:textColor="#FFFFFF"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/trans_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="텍스트입력 하십시오."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="48sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:hint="INPUT HERE"
+                    android:textColorHint="#FFFFFF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="hint"
+                        android:textColor="#FFFFFF"
+                        android:textSize="48sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/send1"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Send"
+                    android:textSize="34sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
