@@ -433,7 +433,7 @@ fun get_video_frame(num:Int){
         if(swa1==false) {
 
             val urlBuilder =
-                java.lang.StringBuilder("http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMinuDustFrcstDspth") /*URL*/
+                java.lang.StringBuilder("site") /*URL*/
             urlBuilder.append(
                 "?" + URLEncoder.encode(
                     "serviceKey",
@@ -538,7 +538,7 @@ fun get_video_frame(num:Int){
         if(swa2==false) {
 
             val urlBuilder =
-                java.lang.StringBuilder("http://apis.data.go.kr/B090041/openapi/service/RiseSetInfoService/getAreaRiseSetInfo") /*URL*/
+                java.lang.StringBuilder("site") /*URL*/
             urlBuilder.append(
                 "?" + URLEncoder.encode(
                     "serviceKey",
