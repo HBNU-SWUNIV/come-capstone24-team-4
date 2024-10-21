@@ -347,10 +347,15 @@ class MainActivity : AppCompatActivity() {
             connected2=true
             try{
                 get_dust_data()
+            }
+            catch (e:Exception){
+                Toast.makeText(applicationContext, "오류가 생겨서 로드 못한 부분이 있습니다. (인터넷 연결 문제 or API 문제)1", Toast.LENGTH_SHORT).show()
+            }
+            try{
                 get_sun_data()
             }
             catch (e:Exception){
-                Toast.makeText(applicationContext, "오류가 생겨서 로드 못한 부분이 있습니다. (인터넷 연결 문제)", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "오류가 생겨서 로드 못한 부분이 있습니다. (인터넷 연결 문제 or API 문제)2", Toast.LENGTH_SHORT).show()
             }
             try{
                 get_temp_hum()
